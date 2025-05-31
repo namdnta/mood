@@ -1,8 +1,8 @@
 import React from "react";
-import MoodList from "./MoodList";
+
 import MoodInput from "./MoodInput";
 import MoodItem from "./MoodItem";
-import Deletebutton from "./deletebutton";
+
 
 class Mood extends React.Component {
   constructor(props) {

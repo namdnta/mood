@@ -28,4 +28,4 @@ const datalist =() => {
     ];
 }
 
-export {  datalist }; 
+export { datalist }; 

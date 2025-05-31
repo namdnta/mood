@@ -1,5 +1,3 @@
-import React from "react";
-
 class MoodInput extends React.Component {
   constructor(props) {
     super(props);
@@ -7,23 +5,21 @@ class MoodInput extends React.Component {
       mood: "",
       note: "",
       date: new Date().toISOString().split("T")[0],
-      image: null,
+      // image: null, // hapus ini
     };
   }
 
-  handleChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
-  };
-
-  handleImageChange = (event) => {
-    this.setState({ image: URL.createObjectURL(event.target.files[0]) });
-  };
+  // ... handleChange tetap
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.onAddMood(this.state);
-    this.setState({ mood: "", note: "", date: new Date().toISOString().split("T")[0], image: null });
+    // Hapus image dari state yang dikirim
+    this.props.onAddMood({
+      mood: this.state.mood,
+      note: this.state.note,
+      date: this.state.date,
+    });
+    this.setState({ mood: "", note: "", date: new Date().toISOString().split("T")[0] });
   };
 
   render() {
@@ -32,7 +28,6 @@ class MoodInput extends React.Component {
         <input type="text" name="mood" placeholder="Your mood" value={this.state.mood} onChange={this.handleChange} required />
         <textarea name="note" placeholder="Additional notes" value={this.state.note} onChange={this.handleChange}></textarea>
         <input type="date" name="date" value={this.state.date} onChange={this.handleChange} />
-        <input type="file" accept="image/*" onChange={this.handleImageChange} />
         <button type="submit">Add Mood</button>
       </form>
     );

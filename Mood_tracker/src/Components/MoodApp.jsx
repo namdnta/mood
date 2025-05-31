@@ -1,16 +1,16 @@
 import React from "react";
 import MoodList from "./MoodList";
 import MoodInput from "./MoodInput";
-
+import { datalist } from '../Utils/data';
 
 class MoodApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      moods: [],
+      moods: datalist(), // ← set initial data dari data.js
     };
   }
-
+  
   handleAddMood = (mood) => {
     const newMood = { ...mood, id: Date.now() };
     this.setState((prevState) => ({
