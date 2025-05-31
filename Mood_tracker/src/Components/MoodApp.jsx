@@ -38,3 +38,5 @@ class MoodApp extends React.Component {
     );
   }
 }
+
+export default MoodApp;
