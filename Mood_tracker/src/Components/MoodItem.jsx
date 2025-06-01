@@ -3,6 +3,7 @@ import MoodItemBody from "./ItemBody";
 import Deletebutton from "./deletebutton";
 import ItemImage from "./ItemImage";
 
+
 function MoodItem({ mood, onDelete }) {
   return (
     <div className="mood-item">

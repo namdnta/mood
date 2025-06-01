@@ -5,7 +5,7 @@ import MoodApp from './Components/MoodApp';
 
 const room = createRoot(document.getElementById('root'));
 room.render(
-  <Mood>
+
     <Mood />
-  </Mood>
+
 );

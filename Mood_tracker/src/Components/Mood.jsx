@@ -2,13 +2,13 @@ import React from "react";
 
 import MoodInput from "./MoodInput";
 import MoodItem from "./MoodItem";
-
+import { datalist } from "../Utils/data";
 
 class Mood extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      moods: [],
+      moods: datalist (),
     };
   }
 
