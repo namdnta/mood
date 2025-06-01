@@ -1,3 +1,5 @@
+import React from 'react';
+
 class MoodInput extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +12,11 @@ class MoodInput extends React.Component {
   }
 
   // ... handleChange tetap
+handleChange = (event) => {
+  this.setState({
+    [event.target.name]: event.target.value
+  });
+}
 
   handleSubmit = (event) => {
     event.preventDefault();
@@ -33,3 +40,5 @@ class MoodInput extends React.Component {
     );
   }
 }
+
+export default MoodInput;
