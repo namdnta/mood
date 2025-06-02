@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../Styles/styles.css";
 import MoodInput from "./MoodInput";
 import MoodItem from "./MoodItem";
 import { datalist } from "../Utils/data";

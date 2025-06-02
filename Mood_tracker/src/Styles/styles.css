@@ -1,0 +1,103 @@
+.mood-item{
+    box-shadow: 0 2px 6px;
+background-color: bisque;
+margin: 15px;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+margin-left: 20px;
+width: 300px; 
+height: 100px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+justify-content: center;
+display: inline-block;
+justify-content: center;
+background-image: url(https://i.pinimg.com/736x/d6/ac/e6/d6ace62135c95943bc87feab8d922f55.jpg);
+background-size: cover;
+background-position: center;
+padding-top: 40px;
+padding-bottom: 30px;
+color: bisque;
+letter-spacing: 2.5px;
+overflow: hidden;
+align-items: center;
+align-content: center;
+padding-left: 20px;
+}
+
+.mood-item:hover {
+    background-color: rgb(252, 196, 196);
+    transform: scale(1.05);
+}
+
+.moods {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 12px;
+}
+
+.mood-input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin: 20px;
+    size-adjust: 90px;
+    padding: 20px;
+    gap: 10px;
+    background-color: #cbbadd;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #341c4d;
+}
+
+.mood-input-form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+.mood-input-form input[type="date"] {
+    width: 280px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+.mood-input-form textarea {
+width: 280px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+body {
+    background-color: #F3E8FF;
+    font-family: 'Moodcake';
+    color: #341c4d;
+}
+
+@font-face{
+    font-family: 'Moodcake';
+    src: url('Assests/Fonts/Moodcake.ttf') format('truetype');
+    font-weight: normal;
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.card{
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

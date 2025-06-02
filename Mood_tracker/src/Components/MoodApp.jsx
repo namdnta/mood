@@ -1,5 +1,6 @@
 import React from "react";
 import { datalist } from "../Utils/data";
+import "../Styles/styles.css";
 
 class MoodApp extends React.Component {
   constructor(props) {
@@ -11,12 +12,12 @@ class MoodApp extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h1>Mood Tracker</h1>
         <div>
           {this.state.moods.map((mood) => (
             <div key={mood.id}>
-              <h3>{mood.mood}</h3>
+              <h2 className="moods">{mood.mood}</h2>
               <p>{mood.date}</p>
               <p>{mood.note}</p>
             </div>
