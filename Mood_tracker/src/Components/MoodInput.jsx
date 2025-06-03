@@ -33,7 +33,7 @@ handleChange = (event) => {
     return (
       <form onSubmit={this.handleSubmit} className="mood-input-form">
         <input type="text" name="mood" placeholder="Your mood" value={this.state.mood} onChange={this.handleChange} required />
-        <textarea name="note" placeholder="Additional notes" value={this.state.note} onChange={this.handleChange}></textarea>
+        <textarea name="note" placeholder="Reason/Story" value={this.state.note} onChange={this.handleChange}></textarea>
         <input type="date" name="date" value={this.state.date} onChange={this.handleChange} />
         <button type="submit">Add Mood</button>
       </form>
